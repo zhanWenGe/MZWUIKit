@@ -7,7 +7,10 @@
 //
 
 #import "UIImageView+AN.h"
-#import "AFNetworkReachabilityManager.h"
+#import <AFNetWorking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/SDImageCache.h>
+//#import "UIImage+AN.h"
 
 @implementation UIImageView (AN)
 

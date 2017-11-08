@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TKAlertCenter.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface UIViewController (ANHUD)
 

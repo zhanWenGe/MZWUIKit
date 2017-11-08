@@ -12,14 +12,14 @@
 
 + (UIImage *)imageWithName:(NSString *)name
 {
-    if (iOS7) {
-        NSString *newName = [name stringByAppendingString:@"_os7"];
-        UIImage *image = [UIImage imageNamed:newName];
-        if (image == nil) {// 没有_os7后缀的图片
-            image = [UIImage imageNamed:name];
-        }
-        return image;
-    }
+//    if (iOS7) {
+//        NSString *newName = [name stringByAppendingString:@"_os7"];
+//        UIImage *image = [UIImage imageNamed:newName];
+//        if (image == nil) {// 没有_os7后缀的图片
+//            image = [UIImage imageNamed:name];
+//        }
+//        return image;
+//    }
     // 非iOS7
     return [UIImage imageNamed:name];
 }
