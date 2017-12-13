@@ -15,7 +15,7 @@
 
 #import <SVProgressHUD/SVProgressHUD.h>
 #if __has_include(<MZWUIKit/MZWUIKit.h>)
-#import <MZWUIKit/CALayer+BorderColor.h>
+#import <MZWUIKit/CALayer+XibConfiguration.h>
 #import <MZWUIKit/UIBarButtonItem+AN.h>
 #import <MZWUIKit/UIColor+AN.h>
 #import <MZWUIKit/UIImage+AN.h>
@@ -25,7 +25,7 @@
 #import <MZWUIKit/UIView+TKCategory.h>
 #import <MZWUIKit/UIViewController+ANHUD.h>
 #else
-#import "CALayer+BorderColor.h"
+#import "CALayer+XibConfiguration.h"
 #import "UIBarButtonItem+AN.h"
 #import "UIColor+AN.h"
 #import "UIImage+AN.h"
