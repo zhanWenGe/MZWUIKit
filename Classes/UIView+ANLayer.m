@@ -11,6 +11,43 @@
 
 @implementation UIView (ANLayer)
 
+
+
+- (CGSize)shadowOffset {
+    return [objc_getAssociatedObject(self, @selector(shadowOffset)) CGSizeValue];
+}
+- (void)setShadowOffset:(CGSize)shadowOffset {
+    self.layer.shadowOffset = shadowOffset;
+}
+
+- (UIColor *)shadowColor {
+    return objc_getAssociatedObject(self, @selector(shadowColor));
+}
+- (void)setShadowColor:(UIColor *)shadowColor {
+    self.layer.shadowColor = shadowColor.CGColor;
+}
+
+- (float)shadowOpactity {
+    return [objc_getAssociatedObject(self, @selector(shadowOpactity)) floatValue];
+}
+- (void)setShadowOpactity:(float)shadowOpactity {
+    self.layer.shadowOpacity = shadowOpactity;
+}
+
+- (CGFloat)shadowRadius {
+    return [objc_getAssociatedObject(self, @selector(shadowRadius)) floatValue];
+}
+- (void)setShadowRadius:(CGFloat)shadowRadius {
+    self.layer.shadowRadius = shadowRadius;
+}
+
+- (BOOL)maskToBounds {
+    return [objc_getAssociatedObject(self, @selector(maskToBounds)) boolValue];
+}
+- (void)setMaskToBounds:(BOOL)maskToBounds {
+    self.layer.masksToBounds = maskToBounds;
+}
+
 - (CGFloat)cornerRadius
 {
     return [objc_getAssociatedObject(self, @selector(cornerRadius)) floatValue];
@@ -21,7 +58,6 @@
     self.layer.masksToBounds = YES;
 }
 
-
 - (CGFloat)borderWidth
 {
     return [objc_getAssociatedObject(self, @selector(borderWidth)) floatValue];
@@ -31,7 +67,6 @@
     self.layer.borderWidth = borderWidth;
     self.layer.masksToBounds = YES;
 }
-
 
 - (UIColor *)borderColor
 {

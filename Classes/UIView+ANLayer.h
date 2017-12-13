@@ -10,6 +10,13 @@
 
 @interface UIView (ANLayer)
 
+@property (nonatomic, assign)IBInspectable CGSize shadowOffset;
+@property (nonatomic, assign)IBInspectable UIColor *shadowColor;
+@property (nonatomic, assign)IBInspectable float shadowOpactity;
+@property (nonatomic, assign)IBInspectable CGFloat shadowRadius;
+@property (nonatomic, assign)IBInspectable BOOL maskToBounds;
+
+
 @property (nonatomic, assign)IBInspectable CGFloat cornerRadius;
 @property (nonatomic, assign)IBInspectable CGFloat borderWidth;
 @property (nonatomic, strong)IBInspectable UIColor *borderColor;
