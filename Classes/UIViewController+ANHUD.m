@@ -13,8 +13,12 @@
 
 
 - (void)showLoadingWithMessage:(NSString *)message{
+//    [SVProgressHUD showWithStatus:message];
+//    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
     [SVProgressHUD showWithStatus:message];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
 }
 - (void)showFailedWithMessage:(NSString *)message{
     [SVProgressHUD setMaximumDismissTimeInterval:2.0];
